@@ -24,16 +24,17 @@ with ydl:
 import youtube_dl
 import os
 
-start = 101;
-end = 154;
+input=' '+input()
+start = 1
+end = input('Number of videos:')
 
 # For fetching the title of the video in playlist
-cmd_code1='py -m youtube_dl -e --playlist-start ' +str(start)+' --playlist-end '+str(end)+' https://www.youtube.com/playlist?list=PLj6h78yzYM2PpmMAnvpvsnR4c27wJePh3'
+cmd_code1='py -m youtube_dl -e --playlist-start ' +str(start)+' --playlist-end '+str(end)+input
 title = os.popen(cmd_code1).read().splitlines()
 #print(title[0])
 
 # For fetching the id of that particular video in playlist
-cmd_code2='py -m youtube_dl --get-id --playlist-start ' +str(start)+' --playlist-end '+str(end)+' https://www.youtube.com/playlist?list=PLj6h78yzYM2PpmMAnvpvsnR4c27wJePh3'
+cmd_code2='py -m youtube_dl --get-id --playlist-start ' +str(start)+' --playlist-end '+str(end)+input
 video_id = os.popen(cmd_code2).read().splitlines()
 
 print('| Topic        |      Video     |  Presentation |')
