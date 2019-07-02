@@ -2,6 +2,7 @@ import youtube_dl
 import os
 
 # input=' https://www.youtube.com/playlist?list=PLj6h78yzYM2PpmMAnvpvsnR4c27wJePh3'
+print("Enter the url:")
 url=' '+input()
 start = 1
 print("Enter number of videos:")
