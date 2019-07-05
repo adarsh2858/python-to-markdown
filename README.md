@@ -4,6 +4,7 @@
 - Create a virtual environment using `python3 -m venv venv`, where the second venv is the name of the virtual environment
 - Activate the virtual environment using `source venv/bin/activate`
 - Import all the packages as per requirements.txt (Run `pip3 install -r requirements.txt` in Terminal)
+- Run this command `git checkout pull-feature` for getting the corresponding files
 - Run `python3 youtuber.py`
 - Enter the url of the corresponding playlist you wish to scrape
 - It will ask you to enter the start point of videos 
